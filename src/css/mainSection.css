@@ -1,0 +1,32 @@
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .cover-img{
+    width: 85%;
+}
+
+.section-2 .cover-img img{
+    width:100%;
+    height:100%;
+}
+
+.section-2 .form-section{
+    display: flex;
+    justify-content: space-around;
+    min-height: 40vh;
+}
+
+.section-2 .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.inputTxt label{
+    color: red;
+    font-weight: 600;
+    font-size: large;
+}
