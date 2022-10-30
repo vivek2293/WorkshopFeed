@@ -15,11 +15,11 @@ const UpdateSection = () => {
   const [url, setUrl] = useState("");
   const [disp1, setDisp1] = useState("");
   const [disp2, setDisp2] = useState("");
-  const uri = "http://localhost:5000/update";
+  const uri = "https://workshopfeed.herokuapp.com/update";
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.post("http://localhost:5000/getTask/id", {
+        const data = await axios.post("https://workshopfeed.herokuapp.com/getTask/id", {
           _id: _id,
         });
         console.log(data.data[0]);

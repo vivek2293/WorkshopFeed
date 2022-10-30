@@ -9,7 +9,7 @@ const DisplayWindow = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.post("http://localhost:5000/getTask");
+        const data = await axios.post("https://workshopfeed.herokuapp.com/getTask");
         console.log(data.data);
         setRecord(data.data);
       } catch (error) {

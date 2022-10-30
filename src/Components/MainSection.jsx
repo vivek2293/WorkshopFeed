@@ -11,7 +11,7 @@ const MainSection = () => {
   const [url, setUrl] = useState("");
   const [disp1, setDisp1] = useState("");
   const [disp2, setDisp2] = useState("d-none");
-  const uri = "http://localhost:5000/create";
+  const uri = "https://workshopfeed.herokuapp.com/create";
   const handleChange = (e) =>{
     if(e.target.value === '2'){
       setDisp1("d-none");
