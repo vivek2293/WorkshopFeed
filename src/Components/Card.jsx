@@ -37,6 +37,11 @@ const Card = (info) => {
             <div className={`${disp2} Venue`}>
               <span className="fa fa-globe"></span>{data.venue}
             </div>
+            <div className="d-flex justify-content-end">
+            <Link to={`/update/${data._id}`}>
+              <span className="fa fa-edit"></span>
+            </Link>
+            </div>
           </div>
         </div>
       </div>
