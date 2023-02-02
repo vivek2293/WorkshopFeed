@@ -1,11 +1,11 @@
 import React from 'react'
-import Slider from '../Components/Slider2'
+import Navigator from '../Components/Navigator'
 import DisplayWindow from '../Components/DisplayWindow'
 const Displaypage = () => {
   return (
     <> 
       <div className="d-flex">
-      <Slider />
+      <Navigator />
       <DisplayWindow />
       </div> 
     </>

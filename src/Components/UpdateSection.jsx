@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import server_URI from "../host";
 import "../css/mainSection.css";
 
 const UpdateSection = () => {
@@ -15,11 +16,11 @@ const UpdateSection = () => {
   const [url, setUrl] = useState("");
   const [disp1, setDisp1] = useState("");
   const [disp2, setDisp2] = useState("");
-  const uri = "https://workshopfeed.herokuapp.com/update";
+  const uri = server_URI + "/update";
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.post("https://workshopfeed.herokuapp.com/getTask/id", {
+        const data = await axios.post(server_URI + "/getTask/id", {
           _id: _id,
         });
         console.log(data.data[0]);

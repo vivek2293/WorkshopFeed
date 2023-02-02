@@ -1,11 +1,11 @@
 import React from 'react'
-import Slider from '../Components/Slider'
+import Navigator from '../Components/Navigator'
 import MainSection from '../Components/MainSection'
 const Homepage = () => {
   return (
     <> 
       <div className="d-flex">
-      <Slider />
+      <Navigator />
       <MainSection />
       </div> 
     </>
